@@ -3,11 +3,12 @@ body {
     text-align: center;
 }
 
-p, a,
+p,
+a,
 h1 {
     color: white;
 }
 
 canvas {
-    background-color: #0fd35a;
+    background-color: black;
 }

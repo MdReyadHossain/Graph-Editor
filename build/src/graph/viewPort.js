@@ -13,8 +13,9 @@ class ViewPort {
     };
     this.#mouseEvent();
   }
-  getPointer(event) {
-    return new Point((event.offsetX - this.center.x) * this.view - this.offset.x, (event.offsetY - this.center.y) * this.view - this.offset.y);
+  getPointer(event, dragOffset = false) {
+    const newPoint = new Point((event.offsetX - this.center.x) * this.view - this.offset.x, (event.offsetY - this.center.y) * this.view - this.offset.y);
+    return dragOffset ? subtract(newPoint, this.drag.offset) : newPoint;
   }
   getOffset() {
     return add(this.offset, this.drag.offset);

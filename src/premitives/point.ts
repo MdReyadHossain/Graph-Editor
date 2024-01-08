@@ -18,7 +18,7 @@ class Point {
         return point.x == this.x && point.y == this.y
     }
 
-    draw(ctx: CanvasRenderingContext2D, { size = 16, color = 'black', outline = false, filled = false } = {}) {
+    draw(ctx: CanvasRenderingContext2D, { size = 16, color = 'white', outline = false, filled = false } = {}) {
         const rad: number = Math.floor(size / 2);
         ctx.beginPath();
         ctx.fillStyle = color;
@@ -29,14 +29,14 @@ class Point {
         if (filled) {
             ctx.beginPath();
             ctx.lineWidth = 2;
-            ctx.strokeStyle = 'yellow';
+            ctx.strokeStyle = 'black';
             ctx.arc(this.x, this.y, rad * 0.5, 0, Math.PI * 2);
             ctx.stroke();
         }
         if (outline) {
             ctx.beginPath();
             ctx.arc(this.x, this.y, rad * 0.4, 0, Math.PI * 2);
-            ctx.fillStyle = 'yellow';
+            ctx.fillStyle = 'black';
             ctx.fill();
         }
     }
