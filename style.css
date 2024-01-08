@@ -1,0 +1,13 @@
+body {
+    background-color: #5e5c5c;
+    text-align: center;
+}
+
+p, a,
+h1 {
+    color: white;
+}
+
+canvas {
+    background-color: #0fd35a;
+}
