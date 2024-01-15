@@ -3,7 +3,7 @@
         "snowpack": "^3.7.1"
     },
     "scripts": {
-        "start": "snowpack dev --port 5001",
+        "start": "snowpack dev --port 4330",
         "build": "snowpack build"
     },
     "dependencies": {

@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
+
+/* font-family: 'Raleway', sans-serif; */
+
+
+@keyframes blink {
+    0% {
+        color: white;
+    }
+
+    50% {
+        color: green;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
 body {
     background-color: #5e5c5c;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
 }
 
 p,
@@ -11,4 +32,22 @@ h1 {
 
 canvas {
     background-color: black;
+}
+
+details {
+    text-align: start;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    animation: blink 2s infinite;
+
+}
+
+.help-summury {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
 }

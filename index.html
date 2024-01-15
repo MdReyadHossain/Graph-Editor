@@ -12,16 +12,29 @@
         <p>Implemented with <i>html, css, typscript</i> and Spetial Graph theory</p>
         <canvas id="graphCanvas"></canvas>
         <div>
-            <button onclick="addRandomPoint()" style="height: 30px; width: 120px;">Add Points</button>
-            <button onclick="removeRandomPoint()" style="height: 30px; width: 120px;">Remove Points</button>
-            <button onclick="addRandomSegment()" style="height: 30px; width: 120px;">Add Segment</button>
-            <button onclick="removeRandomSegment()" style="height: 30px; width: 200px;">Remove Segment</button>
-            <button onclick="clearGraph()" style="height: 30px; width: 120px;">Clear Graph</button>
+            <button onclick="addRandomPoint()" style="height: 30px;">Add Points</button>
+            <button onclick="removeRandomPoint()" style="height: 30px;">Remove Points</button>
+            <button onclick="addRandomSegment()" style="height: 30px; ">Add Segment</button>
+            <button onclick="removeRandomSegment()" style="height: 30px;">Remove Segment</button>
+            <button onclick="clearGraph()" style="height: 30px;">Clear Graph</button>
         </div>
         <div style="margin-top: .2rem;">
             <!-- <button onclick="editorMode()" style="height: 30px; width: 120px;">Turn On Editor</button>
             <button onclick="viewMode()" style="height: 30px; width: 120px;">View Mode</button> -->
             <p>Developed by <a href="http://reyad.kesug.com/" target="_blank">Beet Coder</a></p>
+        </div>
+        <div>
+            <details>
+                <summary>Help</summary>
+                <div class="help-summury">
+                    <ul>
+                        <li><strong>Left Click</strong> to create point and creating new segment.</li>
+                        <li>On a point <strong>Left Click</strong> to select that point and creating new segment.</li>
+                        <li><strong>Right Click</strong> delete selected point.</li>
+                        <li>Also, On a hovered point <strong>Right Click</strong> to delete that.</li>
+                    </ul>
+                </div>
+            </details>
         </div>
     </div>
     
